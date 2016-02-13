@@ -30,4 +30,4 @@ Calendar Page:
  Main Page:
    Figuring out how to change color of bootstrap navbar, being uncooperative.
    Adding some links to it to the other two pages.
-   Need to figure out how to extend the navbar, or just copy it.
+   Need to figure out how to extend the navbar, or just copy it. (Javascript constructor)
