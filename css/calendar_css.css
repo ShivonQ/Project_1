@@ -38,3 +38,9 @@
     background-color: saddlebrown;
     color: white;
 }
+.entire_calendar{
+    float: right;
+}
+.legend{
+    float: left;
+}
