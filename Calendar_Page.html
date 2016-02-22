@@ -6,9 +6,46 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/global_css.css">
     <link rel="stylesheet" href="css/calendar_css.css">
+    <script type="text/javascript" src="javascript_files/day_class.js"></script>
+
     <title>Calendar of 1336 3rd Age</title>
+    <!--  <script type="text/javascript" src="mainscript.js"></script>-->
 </head>
-<body>
+<div>
+    <nav  class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div id="navbar" class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="Main%20Page.html">Archaevas Wiki</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="nav-link"><a href="map_display_page.html">Map Page</a></li>
+                <li ><a href="Calendar_Page.html">Calendar</a></li>
+                <li ><a href="Major_Countries.html">Major Countries</a></li>
+                <li ><a href="#">Adventuring Parties</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+</div>
+<body class="container">
 <div class="main-wrapper">
     <div id="legend" class="col-sm-2 legend">
         <table class="table" BORDER=3 CELLSPACING=3 CELLPADDING=8>
@@ -60,7 +97,7 @@
                     <td class="diff_month_day" ALIGN=center>28</td>
                     <td class="diff_month_day" ALIGN=center>29</td>
                     <td class="diff_month_day" ALIGN=center>30</td>
-                    <td class="day_winter" ALIGN=center>1<img align="right" src="static_images/moon_phase_files/moon_phase_19.jpg"></td>
+                    <td class="day_winter" ALIGN=center onclick="select_element_from_table(this,'Bethal')">1<img align="right" src="static_images/moon_phase_files/moon_phase_19.jpg"></td>
                     <td class="day_winter" ALIGN=center>2<img align="right" src="static_images/moon_phase_files/moon_phase_20.jpg"></td>
                     <td class="day_winter"ALIGN=center>3<img align="right" src="static_images/moon_phase_files/moon_phase_21.jpg"></td>
                     <td class="day_winter"ALIGN=center>4<img align="right" src="static_images/moon_phase_files/moon_phase_22.jpg"></td>
@@ -946,5 +983,15 @@
         </div>
     </div>
 </div>
+<script>
+    function select_element_from_table(element, month_name){
+        alert ('the innerHTML is '+element.innerHTML[0]+" month-name: "+month_name);
+//        TODO call a function that passes this collected data to it to retrieve the information from the json objects
+        var url='display_single_day_information.html';
+        newwindow=window.open(url,'Date Information','height=200,width=650');
+        if (window.focus) {newwindow.focus()}
+        return false;
+    }
+</script>
 </body>
 </html>

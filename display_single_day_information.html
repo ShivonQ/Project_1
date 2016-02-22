@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+    <script type="text/javascript" src="make_image_map_tiles.js"></script>
+    <link rel="stylesheet" href="css/global_css.css">
+    <meta charset="UTF-8">
+
+    <style>
+        body{
+            padding-top: 15px;
+        }
+    </style>
+    <title id="title_of_day">Title</title>
+</head>
+<body>
+    <div class="col-md-4">
+        <table class="table" BORDER=3 CELLSPACING=3 CELLPADDING=8>
+            <tr>
+                <td colspan="4" id="title_of_day_in_table">Days Name</td>
+            </tr>
+            <tr>
+                <td align="right"><b>High Temp:</b></td>
+                <td id="high_temp_insert" align="left">Data Goes Here</td>
+                <td align="right"><b>Low Temp</b></td>
+                <td id="low_temp_insert" align="left">Data Goes Here</td>
+            </tr>
+            <tr>
+                <td align="right"><b>Precipitation Type: </b></td>
+                <td id="precip_type_insert" align="left">Data Goes Here</td>
+                <td align="right"><b>Precipitation Amount:</b></td>
+                <td id="precip_amount_insert" align="left">Data Goes Here</td>
+                <!--Insert Glyphicon of storm if is_a_storm = true-->
+            </tr>
+            <tr>
+                <td align="right"><b>Windspeed:</b></td>
+                <td id="windspeed_insert" align="left">Data Goes Here</td>
+                <td align="right"><b>Wind Direction</b></td>
+                <td id="wind_direction_insert" align="left">Data Goes Here</td>
+            </tr>
+            <!--Here we figure out a way to make the elements for the data list VIA SOME JAVASCRIPT-->
+            <!--A single row of Table with colspan4 per...-->
+        </table>
+    </div>
+</body>
+</html>
