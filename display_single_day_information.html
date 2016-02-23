@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>-->
     <script type="text/javascript" src="make_image_map_tiles.js"></script>
     <link rel="stylesheet" href="css/global_css.css">
     <meta charset="UTF-8">
@@ -44,5 +44,48 @@
             <!--A single row of Table with colspan4 per...-->
         </table>
     </div>
+<script>
+//    window.addEventListener('storage',function(e){
+//        display_the_gathered_info()
+//    })
+//    <!--Here is where the data passed to this will be accessed via session storage-->
+function display_the_gathered_info(){
+    var this_date = JSON.parse(localStorage.getItem("a_day_of_data"));
+    var storm_or_not=this_date.is_a_storm;
+    var this_date_name = (this_date.date_number)+", "+(this_date.month_name);
+    var title=document.getElementById("title_of_day_in_table");
+    var high_temp_td=document.getElementById("high_temp_insert");
+    var low_temp_td=document.getElementById("low_temp_insert");
+    var precip_type_td=document.getElementById("precip_type_insert");
+    var precip_amount_td=document.getElementById("precip_amount_insert");
+    var windspeed_insert_td=document.getElementById("windspeed_insert");
+    var windspeed_direction_td=document.getElementById("wind_direction_insert");
+
+    title.innerHTML=this_date_name;
+    high_temp_td.innerHTML=this_date.high_temprature+" *F";
+    low_temp_td.innerHTML=this_date.low_temprature+" *F";
+
+    precip_type_td.innerHTML=this_date.precipitation_type;
+
+    if (this_date.precipitation==0){
+        precip_amount_td.innerHTML="There was no precipitation this day.";
+    }
+    else{
+        if (storm_or_not==true) {
+            precip_amount_td.innerHTML = "A storm dropped " + this_date.precipitation + " inches over " + this_date.precipitation_duration + " hours."
+        }
+        else{
+            precip_amount_td.innerHTML = this_date.precipitation + " inches in " + this_date.precipitation_duration + " hours."
+
+        }
+    }
+    windspeed_insert_td.innerHTML=this_date.windspeed+" Miles Per Hour";
+    windspeed_direction_td.innerHTML=this_date.wind_direction;
+
+//TODO Call another function that creates more rows for table info
+//    sessionStorage.clear()
+}
+</script>
+    <script>display_the_gathered_info()</script>
 </body>
 </html>

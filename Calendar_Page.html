@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--TODO just realizsed that I can write a single JQuery listener on all the TD elements that are for individual days rather than repeating the same onclick solution-->
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -802,41 +803,41 @@
                     <td class="diff_month_day" ALIGN=center>25</td>
                     <td class="diff_month_day" ALIGN=center>26</td>
                     <td class="diff_month_day" ALIGN=center>27</td>
-                    <td class="day_fall" ALIGN=center>1<img align="right" src="static_images/moon_phase_files/moon_phase_2.jpg"></td>
-                    <td class="day_fall" ALIGN=center>2<img align="right" src="static_images/moon_phase_files/moon_phase_3.jpg"></td>
-                    <td class="day_fall" ALIGN=center>3<img align="right" src="static_images/moon_phase_files/moon_phase_4.jpg"></td>
-                    <td class="day_fall" ALIGN=center>4<img align="right" src="static_images/moon_phase_files/moon_phase_5.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">1<img align="right" src="static_images/moon_phase_files/moon_phase_2.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">2<img align="right" src="static_images/moon_phase_files/moon_phase_3.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">3<img align="right" src="static_images/moon_phase_files/moon_phase_4.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">4<img align="right" src="static_images/moon_phase_files/moon_phase_5.jpg"></td>
                 </tr>
                 <tr>
-                    <td class="day_fall" ALIGN=center>5<img align="right" src="static_images/moon_phase_files/moon_phase_6.jpg"></td>
-                    <td class="day_fall" ALIGN=center>6<img align="right" src="static_images/moon_phase_files/moon_phase_7.jpg"></td>
-                    <td class="day_fall" ALIGN=center>7<img align="right" src="static_images/moon_phase_files/moon_phase_8.jpg"></td>
-                    <td class="day_fall" ALIGN=center>8<img align="right" src="static_images/moon_phase_files/moon_phase_9.jpg"></td>
-                    <td class="day_fall" ALIGN=center>9<img align="right" src="static_images/moon_phase_files/moon_phase_10.jpg"></td>
-                    <td class="day_fall" ALIGN=center>10<img align="right" src="static_images/moon_phase_files/moon_phase_11.jpg"></td>
-                    <td class="day_fall" ALIGN=center>11<img align="right" src="static_images/moon_phase_files/moon_phase_12.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">5<img align="right" src="static_images/moon_phase_files/moon_phase_6.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">6<img align="right" src="static_images/moon_phase_files/moon_phase_7.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">7<img align="right" src="static_images/moon_phase_files/moon_phase_8.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">8<img align="right" src="static_images/moon_phase_files/moon_phase_9.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">9<img align="right" src="static_images/moon_phase_files/moon_phase_10.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">10<img align="right" src="static_images/moon_phase_files/moon_phase_11.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">11<img align="right" src="static_images/moon_phase_files/moon_phase_12.jpg"></td>
                 </tr>
                 <tr>
-                    <td class="day_fall" ALIGN=center>12<img align="right" src="static_images/moon_phase_files/moon_phase_13.jpg"></td>
-                    <td class="day_fall" ALIGN=center>13<img align="right" src="static_images/moon_phase_files/moon_phase_14.jpg"></td>
-                    <td class="day_fall" ALIGN=center>14<img align="right" src="static_images/moon_phase_files/moon_phase_15.jpg"></td>
-                    <td class="day_fall" ALIGN=center>15<img align="right" src="static_images/moon_phase_files/moon_phase_16.jpg"></td>
-                    <td class="day_fall" ALIGN=center>16<img align="right" src="static_images/moon_phase_files/moon_phase_17.jpg"></td>
-                    <td class="day_fall" ALIGN=center>17<img align="right" src="static_images/moon_phase_files/moon_phase_18.jpg"></td>
-                    <td class="day_fall" ALIGN=center>18<img align="right" src="static_images/moon_phase_files/moon_phase_19.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">12<img align="right" src="static_images/moon_phase_files/moon_phase_13.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">13<img align="right" src="static_images/moon_phase_files/moon_phase_14.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">14<img align="right" src="static_images/moon_phase_files/moon_phase_15.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">15<img align="right" src="static_images/moon_phase_files/moon_phase_16.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">16<img align="right" src="static_images/moon_phase_files/moon_phase_17.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">17<img align="right" src="static_images/moon_phase_files/moon_phase_18.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">18<img align="right" src="static_images/moon_phase_files/moon_phase_19.jpg"></td>
                 </tr>
                 <tr>
-                    <td class="day_fall" ALIGN=center>19<img align="right" src="static_images/moon_phase_files/moon_phase_20.jpg"></td>
-                    <td class="day_fall" ALIGN=center>20<img align="right" src="static_images/moon_phase_files/moon_phase_21.jpg"></td>
-                    <td class="day_fall" ALIGN=center>21<img align="right" src="static_images/moon_phase_files/moon_phase_22.jpg"></td>
-                    <td class="day_fall" ALIGN=center>22<img align="right" src="static_images/moon_phase_files/moon_phase_23.jpg"></td>
-                    <td class="day_fall" ALIGN=center>23<img align="right" src="static_images/moon_phase_files/moon_phase_24.jpg"></td>
-                    <td class="day_winter" ALIGN=center>24<img align="right" src="static_images/moon_phase_files/moon_phase_25.jpg"></td>
-                    <td class="day_winter" ALIGN=center>25<img align="right" src="static_images/moon_phase_files/moon_phase_26.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">19<img align="right" src="static_images/moon_phase_files/moon_phase_20.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">20<img align="right" src="static_images/moon_phase_files/moon_phase_21.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">21<img align="right" src="static_images/moon_phase_files/moon_phase_22.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">22<img align="right" src="static_images/moon_phase_files/moon_phase_23.jpg"></td>
+                    <td class="day_fall" ALIGN=center onclick="select_element_from_table(this,'Ponj')">23<img align="right" src="static_images/moon_phase_files/moon_phase_24.jpg"></td>
+                    <td class="day_winter" ALIGN=center onclick="select_element_from_table(this,'Ponj')">24<img align="right" src="static_images/moon_phase_files/moon_phase_25.jpg"></td>
+                    <td class="day_winter" ALIGN=center onclick="select_element_from_table(this,'Ponj')">25<img align="right" src="static_images/moon_phase_files/moon_phase_26.jpg"></td>
                 </tr>
                 <tr>
-                    <td class="day_winter" ALIGN=center>26<img align="right" src="static_images/moon_phase_files/moon_phase_27.jpg"></td>
-                    <td class="day_winter" ALIGN=center>27<img align="right" src="static_images/moon_phase_files/moon_phase_1.jpg"></td>
+                    <td class="day_winter" ALIGN=center onclick="select_element_from_table(this,'Ponj')">26<img align="right" src="static_images/moon_phase_files/moon_phase_27.jpg"></td>
+                    <td class="day_winter" ALIGN=center onclick="select_element_from_table(this,'Ponj')">27<img align="right" src="static_images/moon_phase_files/moon_phase_1.jpg"></td>
                     <td class="diff_month_day" ALIGN=center>1</td>
                     <td class="diff_month_day" ALIGN=center>2</td>
                     <td class="diff_month_day" ALIGN=center>3</td>
@@ -985,10 +986,29 @@
 </div>
 <script>
     function select_element_from_table(element, month_name){
-        alert ('the innerHTML is '+element.innerHTML[0]+" month-name: "+month_name);
-//        TODO call a function that passes this collected data to it to retrieve the information from the json objects
+        localStorage.clear();
+//        sessionStorage.clear();
+        var check_for_pointy_bracket="<";
+        var string_of_element_inner_HTML = element.innerHTML[0]+element.innerHTML[1];
+        if(string_of_element_inner_HTML.indexOf(check_for_pointy_bracket)>-1){
+            string_of_element_inner_HTML=element.innerHTML[0];
+        }
+        else {}
+        alert ('the innerHTML is '+string_of_element_inner_HTML+" month-name: "+month_name);
+//        TODO call a function that passes this collected data to it to retrieve the information from the json objects using session storage
+        var single_day_data_OBJECT_to_pass=month_of_ponj[string_of_element_inner_HTML];
+        localStorage.setItem("a_day_of_data",JSON.stringify(single_day_data_OBJECT_to_pass));
+//        sessionStorage.setItem("a_day_of_data",JSON.stringify(single_day_data_OBJECT_to_pass));
         var url='display_single_day_information.html';
-        newwindow=window.open(url,'Date Information','height=200,width=650');
+        newwindow=null;
+        try{
+            newwindow.close();
+        }
+        catch (Exception){
+
+        }
+
+        newwindow=window.open(url,'Date Information','height=400,width=650');
         if (window.focus) {newwindow.focus()}
         return false;
     }
