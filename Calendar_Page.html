@@ -994,8 +994,7 @@
             string_of_element_inner_HTML=element.innerHTML[0];
         }
         else {}
-        alert ('the innerHTML is '+string_of_element_inner_HTML+" month-name: "+month_name);
-//        TODO call a function that passes this collected data to it to retrieve the information from the json objects using session storage
+//        alert ('the innerHTML is '+string_of_element_inner_HTML+" month-name: "+month_name);
         var single_day_data_OBJECT_to_pass=month_of_ponj[string_of_element_inner_HTML];
         localStorage.setItem("a_day_of_data",JSON.stringify(single_day_data_OBJECT_to_pass));
 //        sessionStorage.setItem("a_day_of_data",JSON.stringify(single_day_data_OBJECT_to_pass));

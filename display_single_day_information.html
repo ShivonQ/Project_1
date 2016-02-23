@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
     <!--<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>-->
     <script type="text/javascript" src="make_image_map_tiles.js"></script>
     <link rel="stylesheet" href="css/global_css.css">
@@ -39,6 +39,13 @@
                 <td id="windspeed_insert" align="left">Data Goes Here</td>
                 <td align="right"><b>Wind Direction</b></td>
                 <td id="wind_direction_insert" align="left">Data Goes Here</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                <p id="notes"><strong>Notes</strong></p>
+                <ul id="notes-list">
+                </ul>
+                </td>
             </tr>
             <!--Here we figure out a way to make the elements for the data list VIA SOME JAVASCRIPT-->
             <!--A single row of Table with colspan4 per...-->
@@ -81,10 +88,18 @@ function display_the_gathered_info(){
     }
     windspeed_insert_td.innerHTML=this_date.windspeed+" Miles Per Hour";
     windspeed_direction_td.innerHTML=this_date.wind_direction;
-
+    create_and_fill_info_table(this_date.simple_information_to_display);
 //TODO Call another function that creates more rows for table info
 //    sessionStorage.clear()
 }
+    function create_and_fill_info_table(data){
+        var data2=data;
+        for(var i=0;i<data2.length;i++){
+            var pulled_string=data2[i];
+            var newElement= $("<li class='event_info'></li>").text(pulled_string);
+            $("#notes-list").append(newElement);
+        }
+    }
 </script>
     <script>display_the_gathered_info()</script>
 </body>

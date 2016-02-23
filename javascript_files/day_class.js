@@ -300,36 +300,36 @@ Ponj22.high_temprature=33.0;
 Ponj22.low_temprature=26.0;
 Ponj22.windspeed=20;
 Ponj22.wind_direction="South East";
-Ponj22.simple_information_to_display=[""];
+Ponj22.simple_information_to_display=["More to come"];
 
 Ponj23.high_temprature=31.0;
 Ponj23.low_temprature=28.0;
 Ponj23.windspeed=5;
 Ponj23.wind_direction="South East";
-Ponj23.simple_information_to_display=[""];
+Ponj23.simple_information_to_display=["More to come"];
 
 Ponj24.high_temprature=28.0;
 Ponj24.low_temprature=15.0;
 Ponj24.windspeed=3;
 Ponj24.wind_direction="East";
-Ponj24.simple_information_to_display=[""];
+Ponj24.simple_information_to_display=["More to come"];
 
 Ponj25.high_temprature=24.0;
 Ponj25.low_temprature=14.0;
 Ponj25.windspeed=3;
 Ponj25.wind_direction="North East";
-Ponj25.simple_information_to_display=[""];
+Ponj25.simple_information_to_display=["More to come"];
 
 Ponj26.high_temprature=22.0;
 Ponj26.low_temprature=(2.0-4.0);
 Ponj26.windspeed=3;
 Ponj26.wind_direction="North East";
-Ponj26.simple_information_to_display=[""];
+Ponj26.simple_information_to_display=["More to come"];
 
 Ponj27.high_temprature=10.0;
 Ponj27.low_temprature=(0.0-8.0);
 Ponj27.windspeed=3;
 Ponj27.wind_direction="East";
-Ponj27.simple_information_to_display=[""];
+Ponj27.simple_information_to_display=["More to come"];
 
 
