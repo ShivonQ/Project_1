@@ -18,11 +18,10 @@ var Settlement_Data=function(){
     this.city_militia=(this.population*0.05);
     this.major_exports=[];
     this.major_imports=[];
-    this.local_stores={"General Stores":[],"Blacksmith":[],"Magic Items":[],"Other Vendors":[]};
+    this.local_stores={"General Stores":[],"Weapons & Armor":[],"Magic Items":[],"Other Vendors":[]};
     this.knowledge_local_information={10:"",15:"",20:"",25:"","30":""};
     this.general_description_of_settlement="";
-    //TODO figure out how to tie an image here. Stick it in a pannable box.
-    //todo MAYBE JUST A URL LINK TO IT.  THEN PUT IT INTO <IMG> TAG AFTER ITS RETRIEVED
+
     this.city_map=null;
     this.local_map=null;
     //TODO once the map is working properly find the coordinates for the towns.

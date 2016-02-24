@@ -60,6 +60,7 @@
         var storm_or_not = this_date.is_a_storm;
         var this_date_name = (this_date.date_number) + ", " + (this_date.month_name);
         var title = document.getElementById("title_of_day_in_table");
+        var over_title=document.getElementById("title_of_day");
         var high_temp_td = document.getElementById("high_temp_insert");
         var low_temp_td = document.getElementById("low_temp_insert");
         var precip_type_td = document.getElementById("precip_type_insert");
@@ -67,6 +68,7 @@
         var windspeed_insert_td = document.getElementById("windspeed_insert");
         var windspeed_direction_td = document.getElementById("wind_direction_insert");
 
+        over_title.innerHTML=this_date_name;
         title.innerHTML = this_date_name;
         high_temp_td.innerHTML = this_date.high_temprature + " *F";
         low_temp_td.innerHTML = this_date.low_temprature + " *F";
