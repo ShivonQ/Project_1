@@ -23,7 +23,7 @@ function initMap() {
             }
             var bound=Math.pow(2,zoom);
         //    C:\Users\School\Downloads\Archaevian Midlands 7 Maptiles
-        return 'file://localhost/C:/Users/School/WebstormProjects/Project_1/maptiles/archaevas_'+normalizedCoord.x+"-"+normalizedCoord.y+".jpeg"
+        return 'file:///localhost/C:/Users/School/WebstormProjects/Project_1/maptiles/archaevas_'+normalizedCoord.x+"-"+normalizedCoord.y+".jpeg"
         },
         tileSize:
             new google.maps.Size(538,433),
